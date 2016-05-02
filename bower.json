@@ -1,0 +1,16 @@
+{
+  "name": "aviary with angular",
+  "homepage": "https://github.com/tadabanri/aviary-web-sample-angular",
+  "authors": [
+    "tadabanri <ryanjericsabado@yahoo.com>"
+  ],
+  "description": "wew",
+  "main": "wew",
+  "keywords": [
+    "wew"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-aviary": "^0.5.1"
+  }
+}
