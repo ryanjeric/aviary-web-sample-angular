@@ -8,7 +8,7 @@
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    </head>
-   <body>
+   <body ng-controller="aviaryctrl">
       <div class="container">
       <div class="row">
       <div class="class-sm-12">
@@ -80,7 +80,15 @@
          apiKey: '3bd340a5f6f64126a9ecb1a9e757bc4c',
         theme: 'light',
         tools: 'all'
-     })
-    });
+        })
+       });
+      myApp.controller("aviaryctrl",function($scope){
+        $scope.onSave = function(data1, data2){
+          console.log(data1 + '/' + data2);
+          var img = document.getElementById('PrvImage');
+          img.src = data2;
+          //angular.element('‪#‎PrvImage‬').attr( 'src', data2)
+        }
+      });
    </script>
 </html>
